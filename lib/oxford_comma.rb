@@ -4,11 +4,10 @@ def oxford_comma(array)
     new_string = array.join(" and ")
   elsif array.length % 2 == 1 && array.length >= 3
     last_item = array.pop 
-    new_string = array.join(", ")
-    new_list= "#{new_string}, and #{last_item}"
+    first_items = array.join(", ")
+    new_string = "#{first_items}, and #{last_item}"
   else 
     array.join 
-
     
   end 
   
